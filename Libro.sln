@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libro.API", "Libro.API\Libro.API.csproj", "{FF37E380-3628-4229-8AA1-7762254E35CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF37E380-3628-4229-8AA1-7762254E35CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF37E380-3628-4229-8AA1-7762254E35CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF37E380-3628-4229-8AA1-7762254E35CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF37E380-3628-4229-8AA1-7762254E35CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {586F989D-F7A1-45E1-84D0-CC1BEF797117}
+	EndGlobalSection
+EndGlobal
