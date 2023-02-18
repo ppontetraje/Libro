@@ -1,6 +1,8 @@
 using Libro.API;
+using Libro.API.DBContext;
 using Libro.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration().MinimumLevel
@@ -34,6 +36,10 @@ builder.Services.AddTransient<IMailService, CloudMailService>();
 #endif
 
 builder.Services.AddSingleton<PersonaDataStore>();
+
+builder.Services.AddDbContext<LibroContext>(
+    dbContextOptions => dbContextOptions.UseSqlite("Data Source=Libro.db"));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
