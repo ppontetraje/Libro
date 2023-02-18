@@ -38,7 +38,8 @@ builder.Services.AddTransient<IMailService, CloudMailService>();
 builder.Services.AddSingleton<PersonaDataStore>();
 
 builder.Services.AddDbContext<LibroContext>(
-    dbContextOptions => dbContextOptions.UseSqlite("Data Source=Libro.db"));
+    dbContextOptions => dbContextOptions.UseSqlite(
+        builder.Configuration["ConnectionStrings:libroDBConnectionString"]));
 
 var app = builder.Build();
 
